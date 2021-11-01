@@ -1,6 +1,12 @@
+@import './styles/reset.css';
 @import './styles/theme.css';
-
-p {
+@import './styles/navbar.css';
+@import './styles/header.css';
+@import './styles/benefits.css';
+body {
   font-family: var(--font-family-jost-);
-  color:red;
+}
+
+main {
+  margin-top: 104px;
 }

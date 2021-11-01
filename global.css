@@ -6,6 +6,7 @@
 @import './styles/courses.css';
 @import './styles/quad.css';
 @import './styles/footer.css';
+@import './styles/burgerMenu.css';
 
 body {
   font-family: var(--font-family-jost-);
@@ -13,4 +14,8 @@ body {
 
 main {
   margin-top: 104px;
+}
+
+.hidden {
+  display:none;
 }

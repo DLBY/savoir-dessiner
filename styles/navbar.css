@@ -46,9 +46,6 @@
   border-right: 1px solid var(--light-grey-4);
   border-left: 1px solid var(--light-grey-4);
 }
-/* .nav_menuRight > li:not(:first-child, last-child) ::before{
-  content:url("../assets/icon/");
-} */
 @media (min-width: 1090px) {
   .nav__menuRight {
     display: flex;

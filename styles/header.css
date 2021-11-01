@@ -1,0 +1,90 @@
+.hero {
+  position: relative;
+  width:100%;
+  height:80vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hero :before{
+  content: "";
+  position: absolute;
+  top: 0; left:0;
+  width:100%;
+  height:100%;
+  background: url('../assets/icon/Tracé\ 68105.svg');
+  background-size: 12% ;
+  background-repeat: no-repeat;
+  background-position: 8% 40%;
+  background-color: var(--yellow);
+  z-index:-10;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  padding:0 5em;
+}
+
+.hero__action {
+  position: relative;
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-50);
+  line-height: var(--line-spacing-50);
+  color: var(--black);
+}
+.hero__action :before{
+  z-index:99;
+  position: absolute;
+  left:0;
+  bottom:0;
+  content: "";
+  background-color:red;
+  height:100%;
+  width:50px;
+}
+@media (min-width: 1920px) {
+  .hero__action {
+    font-size: var(--font-size-70);
+    line-height: var(--line-spacing-85);
+    letter-spacing: var(--character-spacing-0);
+  }
+}
+.hero__content > div {
+  width:50%;
+}
+.hero__left p {
+  margin-left: 4em;
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-18);
+  line-height: var(--line-spacing-24);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+}
+.hero__left > h1{
+  margin-top:5%;
+}
+.hero__left > button  {
+  margin-top:10%;
+}
+.hero__img {
+  margin-left:5%;
+}
+.hero__btn, .btn-secondary {
+  display: flex;
+  align-items: center;
+  font-family: Jost, semi;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1em;
+  background-color: var(--black);
+  color:var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}

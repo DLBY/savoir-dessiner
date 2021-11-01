@@ -57,7 +57,7 @@
   }
 }
 
-.menu__btn {
+.menu__btn, .btn-primary{
   display: flex;
   align-items: center;
   font-family: Jost, semi;

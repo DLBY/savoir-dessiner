@@ -1,0 +1,6 @@
+@import './styles/theme.css';
+
+p {
+  font-family: var(--font-family-jost-);
+  color:red;
+}

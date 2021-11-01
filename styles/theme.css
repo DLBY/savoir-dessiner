@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Jost);
+
+:root {
+
+  /* Colors: */
+  --light-grey-2: #F8F8F8;
+  --green: #00A335;
+  --red: #FF3A3C;
+  --dark-grey-2: #6C6C6C;
+  --dark-grey-3: #B1B1B1;
+  --light-grey-4: #E8E8E8;
+  --light-grey-3: #EFEFEF;
+  --dark-grey-1: #4A4A4A;
+  --light-grey-1: #FCFCFC;
+  --white: #FFFFFF;
+  --black: #000000;
+  --yellow: #FFE401;
+  --other-grey: #343A40;
+  
+  /* Font/text values */
+  --font-family-jost-: Jost;
+  --font-family-poppy-fineliner: Poppy Fineliner;
+  --font-style-normal: normal;
+  --font-weight-normal: normal;
+  --font-weight-bold: bold;
+  --font-weight-medium: medium;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-22: 22px;
+  --font-size-25: 25px;
+  --font-size-30: 30px;
+  --font-size-35: 35px;
+  --font-size-40: 40px;
+  --font-size-50: 50px;
+  --font-size-70: 70px;
+  --character-spacing-0: 0px;
+  --line-spacing-20: 20px;
+  --line-spacing-24: 24px;
+  --line-spacing-30: 30px;
+  --line-spacing-35: 35px;
+  --line-spacing-40: 40px;
+  --line-spacing-50: 50px;
+  --line-spacing-60: 60px;
+  --line-spacing-85: 85px;
+  --text-transform-uppercase: uppercase;
+  }
+  
+  /* Character Styles */
+  .character-style-1 {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-35);
+  line-height: var(--line-spacing-40);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .character-style-2 {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-30);
+  line-height: var(--line-spacing-60);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h2-poppy-fineliner-—-50pt {
+  font-family: var(--font-family-poppy-fineliner);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-50);
+  line-height: var(--line-spacing-60);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h1-poppy-fineliner-—-70pt {
+  font-family: var(--font-family-poppy-fineliner);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-70);
+  line-height: var(--line-spacing-85);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h4-jost-—-25pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-25);
+  line-height: var(--line-spacing-35);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h5-jost-—-22pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-22);
+  line-height: var(--line-spacing-30);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .p-large-jost-—-18pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-18);
+  line-height: var(--line-spacing-24);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h1-jost-—-70pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-70);
+  line-height: var(--line-spacing-85);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h3-jost-—-40pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-40);
+  line-height: var(--line-spacing-50);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .h2-jost-—-50pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-50);
+  line-height: var(--line-spacing-60);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .p-small-jost-—-16pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-16);
+  line-height: var(--line-spacing-24);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+  }
+  .sous-titre-jost-—-14pt {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-14);
+  line-height: var(--line-spacing-20);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--other-grey);
+  text-transform: var(--text-transform-uppercase);
+  }

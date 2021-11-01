@@ -3,6 +3,8 @@
   align-items:center;
   justify-content:center;
   padding:4em 5%;
+  background-color: #f8f8f8;
+  
 }
 .benefits__container {
   display:flex;

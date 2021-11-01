@@ -2,7 +2,7 @@
 @import './styles/theme.css';
 @import './styles/navbar.css';
 @import './styles/header.css';
-
+@import './styles/benefits.css';
 body {
   font-family: var(--font-family-jost-);
 }

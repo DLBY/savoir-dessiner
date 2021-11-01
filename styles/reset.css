@@ -1,0 +1,35 @@
+/* reset */
+html {
+  height: 100%;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100%;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color:var(--black);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+li {
+  display: inline;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}

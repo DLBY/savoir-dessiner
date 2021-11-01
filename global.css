@@ -5,6 +5,7 @@
 @import './styles/benefits.css';
 @import './styles/courses.css';
 @import './styles/quad.css';
+@import './styles/footer.css';
 
 body {
   font-family: var(--font-family-jost-);

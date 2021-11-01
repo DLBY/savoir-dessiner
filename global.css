@@ -3,6 +3,8 @@
 @import './styles/navbar.css';
 @import './styles/header.css';
 @import './styles/benefits.css';
+@import './styles/courses.css';
+
 body {
   font-family: var(--font-family-jost-);
 }

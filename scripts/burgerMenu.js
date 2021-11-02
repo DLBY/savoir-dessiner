@@ -1,5 +1,8 @@
-const nav_node = document.querySelector('.nav__container')
+const burgerBtn = document.querySelector('.header__menu-btn');
+const burgerBar= document.getElementsByClassName("menu-btn__bar");
 
 export const burgerMenu = () => {
-  console.log(nav_node)
-}
+  burgerBtn.onclick = () =>{
+    burgerBtn.classList.toggle('menu-btn--active')
+  };
+};

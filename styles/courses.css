@@ -1,0 +1,108 @@
+.courses {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.courses__cta {
+  padding:2em 0;
+}
+.courses__cta > h2, .courses__cta > p {
+  text-align:center;
+  margin: 0 auto;
+}
+.courses__cta > p {
+  margin-top:1em;
+  width:70%;
+}
+.courses__cta > h2 {
+  width:55%;
+}
+@media (min-width: 768px) {
+  .courses__cta > h2, .courses__cta > p {
+    width:55%;
+  }
+}
+.courses__cta > h2 {
+  font-family: var(--font-family-jost-);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-40);
+  line-height: var(--line-spacing-60);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--black);
+}
+
+.courses__container {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap:2em;
+}
+@media (min-width: 768px) {
+  .courses__container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding:0 5%;
+}}
+.courses__item {
+  position:relative;
+  background-color: #F8F8F8;
+  border: 1px solid #E8E8E8;
+  padding: 10px;
+}
+.courses__desc {
+  display:flex;
+  flex-direction:row;
+}
+.courses__desc > div {
+  display:flex;
+  flex-direction:row;
+}
+.courses__icon {
+  margin-right:0.5em;
+}
+.courses__level {
+  color: #00A335;
+}
+.courses_info {
+  margin-left:1em;
+}
+.courses__item > h4 {
+  font-size: 1.5em;
+}
+.courses__item > img {
+  width:100%;
+}
+.courses__item > p{
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-16);
+  line-height: var(--line-spacing-20);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--other-grey);
+  min-height: 100px;
+}
+
+.courses__btn {
+  position:absolute;
+  right:10px;
+  bottom:10px;
+}
+.courses__btn--secondary {
+  display: flex;
+  align-items: center;
+  font-family: Jost, semi;
+  font-weight: bold;
+  text-transform: uppercase;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1em;
+  background-color: #EFEFEF;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2em;
+
+}
+.courses__btn--secondary:hover {
+  filter: brightness(85%);
+}

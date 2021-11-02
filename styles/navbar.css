@@ -1,6 +1,5 @@
-/* remove later */
-.fill {
-  height:200vh;
+.nav__menu--mobile {
+  display:block;
 }
 
 .nav {
@@ -9,7 +8,7 @@
   top:0;
   right: 0;
   z-index:10;
-  height: 104px;
+  height: calc(104px);
   background-color: #fff;
   display:flex;
   align-items: center;
@@ -21,25 +20,45 @@
 }
 
 .nav__list {
-  margin-left: 4em;
+  margin-left: 2em;
   display:flex;
   align-items: center;
 }
-.nav__list > li:not(:first-child) {
-  margin-left:2em;
+.nav__list > li:not(:first-child), .nav__menuRight > li:not(:first-child) {
+  margin-left:1em;
 }
 .nav__container {
+  display:none;
+}
+.nav__menu--mobile {
   display:flex;
   width: 100%;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 4em;
+
 }
 
+@media (min-width: 768px) {
+  .nav {
+  height: calc(104px + 5%);
+  }
+  .nav__menu--mobile {
+    display:none;
+  }
+  .nav__container {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4em;
+  }
+}
 .nav__menuRight {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .nav__menuItem {
   padding: 0 1em;
@@ -47,16 +66,54 @@
   border-left: 1px solid var(--light-grey-4);
 }
 @media (min-width: 1090px) {
+    /* navigation hover effect */
+    .nav__list-item {
+      position: relative;
+      transition: all 0.2 ease-in-out;
+    }
+  
+    .nav__list-item:before {
+      content:'';
+      position: absolute;
+      width:100%;
+      height:5px;
+      bottom:calc(-40px);
+      left:0;
+      background-color: black;
+      visibility:hidden;
+      transform: scaleX(0);
+      transition: all .25s ease-in-out;
+    }
+    .nav__list-item:hover {
+      cursor: pointer;
+    }
+    .nav__list-item:hover:before {
+      visibility:visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  .nav {
+    height: 104px;
+  }
   .nav__menuRight {
     display: flex;
-    flex-direction: row;
     align-items: center;
   }
   .nav__menuRight > li:not(:first-child) {
     margin-left:1em;
   }
+  .nav__container {
+    flex-direction: row;
+  }
 }
-
+@media (min-width: 1440px) {
+  .nav__list > li:not(:first-child) {
+    margin-left:2em;
+  }
+  .nav__list {
+    margin-left:4em;
+  }
+}
 .menu__btn, .btn-primary{
   display: flex;
   align-items: center;

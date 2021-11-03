@@ -7,7 +7,7 @@
 @import './styles/quad.css';
 @import './styles/footer.css';
 @import './styles/burgerMenu.css';
-
+@import './styles/modal.css';
 body {
   font-family: var(--font-family-jost-);
 }
@@ -15,6 +15,10 @@ body {
 main {
   margin-top: 104px;
 }
+
+/* main.modalActive {
+  margin-top: 0;
+} */
 @media (min-width: 768px) {
   main {
     margin-top: calc(104px + 5%);

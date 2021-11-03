@@ -10,10 +10,10 @@ Réalisé avec :
 ## Liens
 
 * URL : [https://savoir-dessiner.vercel.app/](https://savoir-dessiner.vercel.app/)
-
+* PREVIEW : [https://savoir-dessiner-kf8me08bb-dlby.vercel.app/](https://savoir-dessiner-kf8me08bb-dlby.vercel.app/)
 ## 📑 To do
 
 * [X] Intégrer navigation mobile (Tab bar + Burger Menu ?)
 * [ ] Améliorer accessibilité/performance ? (cf. lighthouse)
-* [ ] Dropdown onglet à propos
-* [ ] Améliorer footer en mobile
+* [X] Dropdown onglet à propos
+* [X] Améliorer footer en mobile

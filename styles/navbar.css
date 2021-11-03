@@ -7,7 +7,7 @@
   left: 0;
   top:0;
   right: 0;
-  z-index:1;
+  z-index:10;
   height: calc(104px);
   background-color: #fff;
   display:flex;
@@ -147,6 +147,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.menu__btn:hover {
-  color: var(--white);
+.menu__btn:hover, .btn-primary:hover {
+  filter: brightness(85%);
 }

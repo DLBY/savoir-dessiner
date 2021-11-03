@@ -75,20 +75,16 @@
 .hero__img {
   display: none;
 }
-.hero__btn, .btn-secondary {
-  display: flex;
-  align-items: center;
-  font-family: Jost, semi;
-  font-weight: bold;
-  text-transform: uppercase;
-  justify-content: center;
-  border: none;
-  border-radius: 10px;
-  padding: 1em 1em;
-  background-color: var(--black);
-  color:var(--white);
-  cursor: pointer;
-  transition: all 0.3s ease;
+
+@keyframes slideInBtn {
+  0% {
+    opacity: 0;
+    left:100%;
+  }
+  100% {
+    opacity: 1;
+    left:0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -114,4 +110,76 @@
   .hero {
     height:60vh;
   }
+}
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+.btn, .btnBis {
+  position: relative;
+  display: inline-block;
+  width: auto; height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+  .btn span, .btnBis span {   
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    border-radius:10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 1em 1em;
+    transition: 0.3s;
+  }
+
+/*--- btn-anim ---*/
+
+.btn-1::before, .btn-2::before {
+  z-index:5;
+  background:none;
+  border-radius:10px;
+  background-color: black;
+  transition: 0.3s ease-out;
+}
+.btn-1 span , .btn-2 span{
+  z-index:5;
+  color: rgb(255,255,255);
+  border: 1px solid black;
+  transition: 0.2s 0.1s;
+}
+.btn-1 span:before , .btn-2 span:before {
+  background: none;
+}
+.btn-1 span:hover, .btn-2 span:hover {
+  color: black;
+  transition: 0.2s 0.1s;
+}
+
+.btnBis {
+  background-color: black;
+  border-radius:10px;
+}
+
+.btn-2::before {
+  border-radius:10px;
+  background-color: white;
+}
+.btn-2 span {
+  color: black;
+}
+.btn-2 span:hover {
+  color: white;
+}
+
+.btn.hover-filled-slide-left::before, .btnBis.hover-filled-slide-left::before{
+  top: 0; bottom: 0; left: 0;
+  height: 100%; width: 100%;
+}
+.btn.hover-filled-slide-left:hover::before, .btnBis.hover-filled-slide-left:hover::before  {
+  width: 0%;
 }

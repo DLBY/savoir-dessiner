@@ -17,11 +17,7 @@
 .courses__cta > h2 {
   width:55%;
 }
-@media (min-width: 768px) {
-  .courses__cta > h2, .courses__cta > p {
-    width:55%;
-  }
-}
+
 .courses__cta > h2 {
   font-family: var(--font-family-jost-);
   font-style: var(--font-style-normal);
@@ -43,7 +39,23 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     padding:0 5%;
-}}
+  }
+  .courses__desc {
+    font-size: 12px;
+  }
+  .courses__cta > h2, .courses__cta > p {
+    width:55%;
+  }
+  .courses__item {
+    height:calc(100% + 1em);
+  }
+}
+
+@media (min-width: 1024px) {
+  .courses__desc  {
+    font-size:14px;
+  }
+}
 .courses__item {
   position:relative;
   background-color: #F8F8F8;

@@ -28,7 +28,6 @@
   padding:0 2em;
 }
 .hero__action {
-  position: relative;
   font-style: var(--font-style-normal);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-30);

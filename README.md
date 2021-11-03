@@ -7,7 +7,6 @@ Réalisé avec :
 - Balisage sémantique HTML5
 - Custom CSS par page/composant
 - JavaScript
--
 
 ## Liens
 

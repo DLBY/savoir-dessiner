@@ -32,7 +32,7 @@
 .modal__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5em;
+  gap: 20%;
 }
 
 .modal__content > ul > li {

@@ -103,6 +103,9 @@
     display: block;
     margin-left:5%;
   }
+  .hero__img:hover {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: 1920px) {

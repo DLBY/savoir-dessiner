@@ -8,6 +8,8 @@
 @import './styles/footer.css';
 @import './styles/burgerMenu.css';
 @import './styles/modal.css';
+@import './styles/animation.css';
+
 body {
   font-family: var(--font-family-jost-);
 }

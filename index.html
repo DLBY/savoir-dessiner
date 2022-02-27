@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="./assets/icon/Logo_SD.svg" />
     <link rel="stylesheet" href="./global.css" />
+    <script src="https://kit.fontawesome.com/d5f678f009.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Navigation bar START-->
@@ -107,9 +108,43 @@
         </ul>
       </div>
     </div>
+
+    <div class="video-wrap">
+      <div class="video-inner">
+        <video
+          class="video-player"
+          src="media/school.mp4"
+          poster="media/school.png"
+          preload="auto"
+        >
+          <source
+            src="media/school.webm"
+            type='video/webm; codecs="vp8.0, vorbis"'
+          />
+          <source
+            src="media/school.mp4"
+            type='video/mp4; codecs="avc1.4D401E, mp4a.40.2"'
+          />
+          <p>Sorry, but your browser does not support this video format.</p>
+        </video>
+        <button class="action action--close">
+          <svg class="close-btn"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+          <span class="action__label action__label--hidden">Close preview</span>
+        </button>
+      </div>
+      <!-- /video-inner -->
+    </div>
+<!-- /video-wrap-->
+
+<div class="content">
+  <div class="loader">
+    <i class="fa fa-spinner fa-pulse"></i>
+  </div>
+</div>
     <main class="main">
       <!-- Hero header START-->
       <section class="hero">
+      
         <div class="hero__content">
           <div class="hero__left">
             <p>L’ATELIER ONLINE</p>
@@ -120,7 +155,7 @@
               <span>COMMENCER GRATUITEMENT</span>
             </button>
           </div class="hero__right">
-          <div class="hero__img">
+          <div class="hero__img action--play">
             <img src="./assets/image/header_img.png" alt="hero" />
           </div>
         </div>
@@ -311,5 +346,7 @@
       </div>
     </footer>
     <script type="module" src="./scripts/index.js" async defer></script>
+    <script type="module" src="./scripts/classie.js" async defer></script>
+    <script type="module" src="./scripts/animations.js"></script>
   </body>
 </html>
